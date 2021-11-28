@@ -6,15 +6,15 @@ $('document').ready(function(){
 		var vw;
 		$(window).resize(function(){
 			 vw = $(window).width()/2;
-			$('#b1,#b2,#b3,#b4,#b5,#b6,#b7, #8').stop();
-			$('#b11').animate({top:240, left: vw-350},500);
-			$('#b22').animate({top:240, left: vw-250},500);
-			$('#b33').animate({top:240, left: vw-150},500);
-			$('#b44').animate({top:240, left: vw-50},500);
-			$('#b55').animate({top:240, left: vw+50},500);
-			$('#b66').animate({top:240, left: vw+150},500);
-            $('#b77').animate({top:240, left: vw+250},500);
-            $('#b88').animate({top:240, left: vw+250},500);
+			$('#b1,#b2,#b3,#b4').stop();
+			$('#b11').animate({top:300, left: vw-150},500);
+			$('#b22').animate({top:300, left: vw-100},500);
+			$('#b33').animate({top:300, left: vw+50},500);
+			$('#b44').animate({top:300, left: vw+150},500);
+			// $('#b55').animate({top:240, left: vw+50},500);
+			// $('#b66').animate({top:240, left: vw+150},500);
+      //       $('#b77').animate({top:240, left: vw+250},500);
+      //       $('#b88').animate({top:240, left: vw+250},500);
 		});
 
 	$('#turn_on').click(function(){
@@ -154,14 +154,14 @@ $('document').ready(function(){
 		$('#b6').attr('id','b66')
         $('#b7').attr('id','b77')
         $('#b8').attr('id','b88')
-		$('#b11').animate({top:240, left: vw-350},500);
-		$('#b22').animate({top:240, left: vw-250},500);
-		$('#b33').animate({top:240, left: vw-150},500);
-		$('#b44').animate({top:240, left: vw-50},500);
-		$('#b55').animate({top:240, left: vw+50},500);
-		$('#b66').animate({top:240, left: vw+150},500);
-        $('#b77').animate({top:240, left: vw+250},500);
-        $('#b88').animate({top:240, left: vw+250},500);
+		$('#b11').animate({top:150, left: vw-180},500);
+		$('#b22').animate({top:150, left: vw-80},500);
+		$('#b33').animate({top:150, left: vw+10},500);
+		$('#b44').animate({top:150, left: vw+70},500);
+		// $('#b55').animate({top:150, left: vw+100},500);
+		// $('#b66').animate({top:150, left: vw+150},500);
+    //     $('#b77').animate({top:240, left: vw+250},500);
+    //     $('#b88').animate({top:240, left: vw+250},500);
 		$('.balloons').css('opacity','0.9');
 		$('.balloons h2').fadeIn(3000);
 		$(this).fadeOut('slow').delay(3000).promise().done(function(){
@@ -178,13 +178,13 @@ $('document').ready(function(){
 		var i;
 
 		function msgLoop (i) {
-			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
+			$("p:nth-child("+i+")").fadeOut('slow').delay(1500).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
-			if(i==9){
+			$("p:nth-child("+i+")").fadeIn('slow').delay(1500);
+			if(i==34){
 				$("p:nth-child(6)").fadeOut('slow').promise().done(function () {
                     $('.cake').fadeIn('fast');
-                    $("p:nth-child(8)").fadeIn('fast');
+                    $("p:nth-child(33)").fadeIn('fast');
 				});
 				
 			}
