@@ -1312,3 +1312,7 @@ audio {
     		-webkit-transform: scale(0.9);
     	}
     }*/
+
+.linkButton {
+	margin-top: 150px;
+}

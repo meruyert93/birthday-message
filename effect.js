@@ -184,7 +184,7 @@ $('document').ready(function(){
 			if(i==34){
 				$("p:nth-child(6)").fadeOut('slow').promise().done(function () {
                     $('.cake').fadeIn('fast');
-                    $("p:nth-child(33)").fadeIn('fast');
+                    // $("p:nth-child(33)").fadeIn('fast');
 				});
 				
 			}
